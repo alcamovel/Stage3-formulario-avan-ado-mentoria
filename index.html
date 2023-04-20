@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação de Mentoria</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>AVALIE A SUA MENTORIA</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="image/img1.svg" alt="Avaliação" />
+      </header>
+
+      <section>
+        <h2>INFORMAÇÕES PESSOAIS</h2>
+      </section>
+
+      <form id="my-form">
+        
+
+        <fieldset>
+          <div>
+            <div class="input-group">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+
+                <input id="name" type="text" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="surname">Sobrenome</label>
+
+                <input id="surname" type="text" />
+              </div>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="personal-email"
+              >E-mail <span>(digite um email valido)</span></label
+            >
+            <input type="email" id="personal-email" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper-mentorship">
+            <legend>Informações do Mentor</legend>
+  
+            <div class="input-wrapper">
+              <label for="mentorship">Selecione quem foi seu mentor</label>
+              <select id="mentorship">
+                <option value="mentorship">Mayk Brito</option>
+                <option value="mentorship">Mestre Ioda</option>
+                <option value="mentorship">Mestre Kami</option>
+                <option value="mentorship">Tony Stark</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="mentorship-info">Feedback sobre o mentor</label>
+              <textarea id="mentorship-info"></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="event-private" />
+              <label for="event-private">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+
+        </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Agendando próxima Mentoria</legend>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="event-date" />
+            </div>
+  
+            <div class="input-wrapper">
+              <label for="event-begin">Das</label>
+              <input type="time" id="event-begin" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-end">Até</label>
+              <input type="time" id="event-end" />
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <footer>
+      
+        <input class="button" type="submit" value="Salvar">
+  
+    </footer>
+      </form>
+
+      
+    </div>
+  </body>
+</html>
